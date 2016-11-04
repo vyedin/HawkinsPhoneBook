@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HawkinsPhoneBook", "HawkinsPhoneBook\HawkinsPhoneBook.csproj", "{AAF5002A-ADC2-45F5-912B-561E8BB7143E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Release|iPhone.Build.0 = Release|iPhone
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{AAF5002A-ADC2-45F5-912B-561E8BB7143E}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

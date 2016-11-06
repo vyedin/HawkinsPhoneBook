@@ -36,13 +36,13 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="peopleList" destination="17" id="name-outlet-17"/>
+                        <outlet property="peopleTable" destination="17" id="name-outlet-17"/>
                     </connections>
                     <navigationItem title="Hawkins Phone Book" id="102" key="navigationItem"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="253"/>
+            <point key="canvasLocation" x="644" y="89"/>
         </scene>
         <scene sceneID="38">
             <objects>

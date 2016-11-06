@@ -31,7 +31,7 @@ namespace HawkinsPhoneBook
 			// peopleSource, which in turn will have a GCHandle to the *managed* 
 			// peopleSource, which references the *managed* PeopleViewController.
 			// Whew.
-			peopleList.Source = new PeopleSource(this);
+			peopleTable.Source = new PeopleSource(this);
 
 #else
 			// this can be fixed by not referencing the controller from the Source:

@@ -16,13 +16,13 @@ namespace HawkinsPhoneBook
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView peopleList { get; set; }
+        UIKit.UITableView peopleTable { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (peopleList != null) {
-                peopleList.Dispose ();
-                peopleList = null;
+            if (peopleTable != null) {
+                peopleTable.Dispose ();
+                peopleTable = null;
             }
         }
     }

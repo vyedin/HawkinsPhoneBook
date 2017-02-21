@@ -44,12 +44,10 @@ namespace HawkinsPhoneBook
 		public PeopleSource(PeopleViewController peopleViewController)
 		{
 			wr_pvc = new WeakReference<PeopleViewController>(peopleViewController);
-			peopleViewController = null;
 
-			PeopleViewController pvc;
-			if (wr_pvc.TryGetTarget(out pvc))
+			if (wr_pvc.TryGetTarget(out peopleViewController))
 			{
-				data = pvc.Data;
+				data = peopleViewController.Data;
 			}
 		}
 

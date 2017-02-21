@@ -51,7 +51,6 @@ namespace HawkinsPhoneBook
 			{
 				data = pvc.Data;
 			}
-				
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)

@@ -38,11 +38,20 @@ namespace HawkinsPhoneBook
 
 	class PeopleSource : UITableViewSource
 	{
-		readonly PeopleViewController peopleViewController;
+		WeakReference<PeopleViewController> wr_pvc;
+		Dictionary<string, string[]> data;
 
 		public PeopleSource(PeopleViewController peopleViewController)
 		{
-			this.peopleViewController = peopleViewController;
+			wr_pvc = new WeakReference<PeopleViewController>(peopleViewController);
+			peopleViewController = null;
+
+			PeopleViewController pvc;
+			if (wr_pvc.TryGetTarget(out pvc))
+			{
+				data = pvc.Data;
+			}
+				
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
@@ -51,7 +60,7 @@ namespace HawkinsPhoneBook
 
 			string[] people = null;
 
-			if (peopleViewController.Data.TryGetValue(peopleViewController.Data.Keys.ElementAt((int)indexPath.Section), out people))
+			if (data.TryGetValue(data.Keys.ElementAt((int)indexPath.Section), out people))
 			{
 				var item = people[indexPath.Row];
 				cell.TextLabel.Text = item ?? "";
@@ -66,18 +75,18 @@ namespace HawkinsPhoneBook
 
 		public override nint NumberOfSections(UITableView tableView)
 		{
-			return peopleViewController.Data.Count;
+			return data.Count;
 		}
 
 		public override string TitleForHeader(UITableView tableView, nint section)
 		{
-			return peopleViewController.Data.Keys.ElementAt((int)section);
+			return data.Keys.ElementAt((int)section);
 		}
 
 		public override nint RowsInSection(UITableView tableview, nint section)
 		{
 			string[] people = null;
-			if (peopleViewController.Data.TryGetValue(peopleViewController.Data.Keys.ElementAt((int)section), out people))
+			if (data.TryGetValue(data.Keys.ElementAt((int)section), out people))
 			{
 				return people.Length;
 			}

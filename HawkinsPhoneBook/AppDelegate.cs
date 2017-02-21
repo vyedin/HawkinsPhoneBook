@@ -18,7 +18,6 @@ namespace HawkinsPhoneBook
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 		{
-			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
